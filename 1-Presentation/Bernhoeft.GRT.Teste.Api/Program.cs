@@ -82,8 +82,11 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-// Configurando o MediatR.
-builder.Services.AddMediatR(options => options.RegisterServicesFromAssemblyContaining<GetAvisosRequest>());
+// Configurando o MediatR - Registrando TODOS os handlers do assembly Application
+builder.Services.AddMediatR(cfg =>
+{
+    cfg.RegisterServicesFromAssembly(typeof(GetAvisosRequest).Assembly);
+});
 
 // Adicionar Context de Conexão com Banco de Dados SqlServer GRT.
 builder.Services.AddDbContext();

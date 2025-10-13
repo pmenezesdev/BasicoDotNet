@@ -1,4 +1,4 @@
-﻿using Bernhoeft.GRT.ContractWeb.Domain.SqlServer.ContractStore.Interfaces.Repositories;
+using Bernhoeft.GRT.ContractWeb.Domain.SqlServer.ContractStore.Interfaces.Repositories;
 using Bernhoeft.GRT.Core.EntityFramework.Domain.Interfaces;
 using Bernhoeft.GRT.Core.Enums;
 using Bernhoeft.GRT.Core.Extensions;
